@@ -1,11 +1,13 @@
 from RobotVoice import text_to_speech
 import ollama
 
+
 def get_OllamaAnswer(uerIn):
-    ollama.pull("llama3")
+    textToRead = ''
+    ollama.pull("stablelm-zephyr")
 
     stream = ollama.chat(
-        model = "llama3",
+        model = "stablelm-zephyr",
         messages=[{
             "role": "user",
             "content": uerIn
@@ -13,7 +15,11 @@ def get_OllamaAnswer(uerIn):
         stream=True
     )
 
+    #print (" " + stream['message']['content'])
     print (' ', end = '')
     for message in stream:
-        print (message['message']['content'], end = '')
+        print (message['message']['content'])
+        #textToRead += (message['message']['content'])
         text_to_speech(message['message']['content'])
+
+#get_OllamaAnswer("what is youre name?")

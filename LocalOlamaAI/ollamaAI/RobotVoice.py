@@ -1,6 +1,6 @@
 import pyttsx3
 
-def text_to_speech(text, voice_id=2, rate=200):
+def text_to_speech(text, voice_id=1, rate=200):
     engine = pyttsx3.init()
 
     # Changing voice
@@ -21,6 +21,6 @@ def text_to_speech(text, voice_id=2, rate=200):
 
 # For demo purposes #########################################################################
 text = "Hello, world!"
-voice_id = 1  # Change this number to select different voices
+voice_id =1  # Change this number to select different voices
 rate = 200  # Adjust this number for different speed rates
 #text_to_speech(text, voice_id, rate)
