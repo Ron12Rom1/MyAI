@@ -1,0 +1,1 @@
+pyhon Ollama_main.py
