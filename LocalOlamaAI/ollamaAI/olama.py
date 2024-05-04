@@ -13,8 +13,7 @@ def get_OllamaAnswer(uerIn):
         stream=True
     )
 
+    print (' ', end = '')
     for message in stream:
         print (message['message']['content'], end = '')
         text_to_speech(message['message']['content'])
-
-#get_OllamaAnswer(None)

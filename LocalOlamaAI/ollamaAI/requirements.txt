@@ -1,1 +1,5 @@
 pyttsx3
+ollama
+pyaudio
+keyboard
+SpeechRecognition

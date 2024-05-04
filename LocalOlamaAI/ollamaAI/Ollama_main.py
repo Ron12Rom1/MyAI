@@ -11,9 +11,9 @@ while True:
             break
 
 transcribedText = transcribe_audio()
-print("You:\n " + transcribedText)
+print("You:\n " + transcribedText + "\n")
 
-print ("llama:\n ")
-ollamaAnswer = get_OllamaAnswer(transcribedText)
+print ("Llama:")
+get_OllamaAnswer(transcribedText)
 #print (ollamaAnswer)
 #text_to_speech(ollamaAnswer)

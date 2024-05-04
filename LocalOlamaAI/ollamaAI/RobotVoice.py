@@ -19,7 +19,8 @@ def text_to_speech(text, voice_id=2, rate=200):
     engine.runAndWait()
 
 
-text = "שלום"
-voice_id = 3  # Change this number to select different voices
+# For demo purposes #########################################################################
+text = "Hello, world!"
+voice_id = 1  # Change this number to select different voices
 rate = 200  # Adjust this number for different speed rates
 #text_to_speech(text, voice_id, rate)
