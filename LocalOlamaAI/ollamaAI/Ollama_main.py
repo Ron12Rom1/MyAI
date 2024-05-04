@@ -4,7 +4,7 @@ from RobotVoice import text_to_speech
 from VoiceReconizer import transcribe_audio
 import keyboard, wave
 
-print("\nPress RIGHT_SHIFT to start recording")
+print("\nPress RIGHT_SHIFT to start talking with ollamaBot")
 while True:
         if keyboard.is_pressed('RIGHT_SHIFT'):
             record_audio()
@@ -13,6 +13,7 @@ while True:
 transcribedText = transcribe_audio()
 print("You:\n " + transcribedText)
 
+print ("llama:\n ")
 ollamaAnswer = get_OllamaAnswer(transcribedText)
 #print (ollamaAnswer)
 #text_to_speech(ollamaAnswer)
