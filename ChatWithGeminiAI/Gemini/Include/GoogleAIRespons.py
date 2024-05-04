@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os, pyautogui
 
-api_key = "AIzaSyCeRW0rL4DSa8hjqxc4wK1XssuxMclRhQk"
+api_key = "[API_KEY]"
 def getAIResponse(UserIn):
     print ("Thinking...")
     genai.configure(api_key=api_key)
