@@ -1,1 +1,1 @@
-pyhon Ollama_main.py
+python Ollama_main.py
