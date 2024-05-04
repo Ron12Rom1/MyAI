@@ -1,5 +1,5 @@
 This is a Work in progress,
-It dosnt work vry well ,
+It dosnt work very well ,
 Its slow and jenky.
 
 My plan is to make it better someday
